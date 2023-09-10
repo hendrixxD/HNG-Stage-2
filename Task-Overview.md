@@ -40,7 +40,7 @@ This  should:
  - UML diagrams (or links to view them).
    
 **6. Documentation**:
- - Provide a documentation file (e.g., DOCUMENTATION.md in your GitHub repo) that outlines:
+ - Provide a documentation file (e.g., `DOCUMENTATION.md` in your GitHub repo) that outlines:
  - Standard formats for requests and responses for each endpoint.
  - Sample usage of the API, including example requests and expected responses.
  - Any known limitations or assumptions made during development.
@@ -52,8 +52,13 @@ This  should:
 
 ### Acceptance Criteria
 **Functional REST API**: The API should successfully perform all CRUD operations.
+
 **Modelling Diagrams**: Clear and accurate UML and E-R diagrams should be provided.
+
 **Effective Testing Script**: The script should successfully test all the CRUD operations without manual intervention.
+
 **Dynamic Parameter Handling**: The API should correctly handle and respond to different parameters provided.
+
 **GitHub Repository**: Repository should be well-organized, contain all necessary files, and be publicly accessible.
+
 **Detailed Documentation**: Documentation should provide clear guidance on how to use the API, including setup, request/response formats, and sample usage.
