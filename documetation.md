@@ -164,10 +164,19 @@ Here are some sample API usage scenarios:
    ```
 
 - **Response:**
+
   ![A terminal response of PUT](IMGs/DELETE_PERSON.png)
+
+### More...
+if you try to POST the same Person object again with the same name, you will get this:
+
+![A terminal response for duplicate names](IMGs/DUPLICATE_PERSON.png)
 
 ## Know Limitations
 - The API does not support batch operations.
 - Authentication and authorization mechanisms are not implemented in this sample.
 - Input validation checks for string fields only; other data types are not allowed.
 - Duplicate name validation is performed only during creation, not during updates.
+
+## Roll Up
+this API was extensively tested with postman ans a request script also provided in the repository:x
