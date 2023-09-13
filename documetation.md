@@ -26,11 +26,12 @@ To use the Django REST API, follow these setup instructions:
    git clone <repository_url>
    cd <repository_directory>
 
-   1. Create a virtual environment and activate it
+Create a virtual environment and activate it
 
-     ```bash
-     python -m venv venv
-     source venv/bin/activate
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
 
 
 
