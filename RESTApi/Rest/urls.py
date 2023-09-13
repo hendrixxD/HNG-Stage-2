@@ -21,8 +21,8 @@ register_converter(IntOrStrConverter, 'int_or_str')
 app_name='Rest'
 urlpatterns = [
     # creates a new person object
-    path('api/', PersonListCreateView.as_view(), name='Person-create'),
-    path('api/<int_or_str:parameter>/', PersonDetailView.as_view(), name='Person-detail-update-dellete')
+    path('', PersonListCreateView.as_view(), name='Person-create'),
+    path('<int_or_str:parameter>/', PersonDetailView.as_view(), name='Person-detail-update-dellete')
     # takes only int ID
     #path('api/<int:id>/', PersonDetailView.as_view(), name='Person-detail-by-id'),
     # takes string parameters only
