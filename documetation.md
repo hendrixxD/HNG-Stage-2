@@ -41,7 +41,7 @@ To use the Django REST API, follow these setup instructions:
    ```bash
    python manage.py migrate
 
-   The API will be accessible at **'http://localhost/api/'**
+The API will be accessible at **'http://localhost/api/'**
 
 ## API Endpoints
 
@@ -52,12 +52,102 @@ To use the Django REST API, follow these setup instructions:
    
    ```json
    {
-    "name": "John Doe",
+    "name": "HendriX",
     "age": 30,
-    "email": "john@example.com"
+    "email": "HendriX@example.com"
+   }
+- **Response Format:**
+   ```json
+   {
+    "message": "Person created successfully.",
+    "status_code": 201
    }
 
+### Fetch Details od a Person
+- **Endpoint: `/api/<id>/` or `/api/<name>/`**
+- **HTTPMethod: GET**
+- **Response Format:**
+   ```json
+   {
+    "user_id": 1,
+    "name": "HendriX",
+    "age": 30,
+    "email": "HendriX@example.com"
+   }
 
+### Update a Person
+- **Endpoint: `/api/<id>/`**
+- **HTTPMethod: PUT**
+- **Request Format:**
+   ```json
+   {
+    "name": "HendriX Jnr",
+    "age": 35,
+    "email": "HendriX@example.com"
+   }
+- **Response Format:**
+   ```json
+   {
+    "message": "updated successfully.",
+    "status_code": 200
+   }
+
+### Delete a Person
+- **Endpoint: `/api/<id>/`**
+- **HTTPMethod: DELETE**
+- **Response Format:**
+   ```json
+   {
+    "message": "deleted successfully.",
+    "status_code": 204
+   }
+
+## Request/Response Formats
+
+- All **requests** and **response** are in JSON format
+- Request data are [or should be] sent in the request body as JSON
+- Response data are[or should be] returned/recieved as JSON
+
+## Sample Usage
+
+Here are some sample API usage scenarios:
+##### *Note: make sure you have your server running*
+
+### Create a Person
+   ```bash
+   curl -X POST -H "Content-Type: application/json" -d '{
+     "name": "Hendrixx Sdiddy",
+     "age": 25,
+     "email": "alice@example.com"
+   }' http://localhost:8000/api/ -w "\n"
+
+- **Response:**
+  ![A terminal response of CREATE](IMGs/CREATE_PERSON.png)
+
+### Fetch Details of a Person
+   ```bash
+   curl http://localhost:8000/api/30/ -w "\n"
+
+- **Response:**
+  ![A terminal response of GET](IMGs/FETCH_PERSON.png)
+
+### Update a Person
+   ```bash
+   curl -X PUT -H "Content-Type: application/json" -d '{
+     "name": "HendriX Lenge",
+     "age": 20,
+     "email": "devreganmatics@example.com"
+   }' http://localhost:8000/api/30/ -w "\n\n"
+
+- **Response:**
+  ![A terminal response of PUT](IMGs/UPDATE_PERSON.png)
+
+### Delete a Person
+   ```bash
+   curl -X DELETE http://localhost:8000/api/30/ -w "\n\n"
+
+- **Response:**
+  ![A terminal response of PUT](IMGs/DELETE_PERSON.png)
 
 ## Know Limitations
 - The API does not support batch operations.
