@@ -26,6 +26,14 @@ To use the Django REST API, follow these setup instructions:
    git clone <repository_url>
    cd <repository_directory>
 
+   1. Create a virtual environment and activate it
+
+     ```bash
+     python -m venv venv
+     source venv/bin/activate
+
+
+
 ## Know Limitations
 - The API does not support batch operations.
 - Authentication and authorization mechanisms are not implemented in this sample.
