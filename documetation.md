@@ -168,9 +168,24 @@ Here are some sample API usage scenarios:
   ![A terminal response of PUT](IMGs/DELETE_PERSON.png)
 
 ### More...
-if you try to POST the same Person object again with the same name, you will get this:
+- if you try to Create the same Person object again with the same name, you will get this:
 
-![A terminal response for duplicate names](IMGs/DUPLICATE_PERSON.png)
+  ![A terminal response for duplicate names](IMGs/DUPLICATE_PERSON.png)
+
+- #### Dynamic Parameter Handling
+  I have created a new `Person` object `Mark Essien`
+
+  ![A terminal response of PUT](IMGs/_api_name__.png)
+
+  And from MySQL Record, `Mark Essien` is `id: 34`
+
+  ![A terminal response of PUT](IMGs/MySQL_Record.png)
+
+  after passing `Mark Essien` to the API URL, it does just as specified. it retrieves the record from the database.
+
+![A terminal response of PUT](IMGs/get_with_name.png)
+
+
 
 ## Know Limitations
 - The API does not support batch operations.
@@ -179,4 +194,4 @@ if you try to POST the same Person object again with the same name, you will get
 - Duplicate name validation is performed only during creation, not during updates.
 
 ## Roll Up
-this API was extensively tested with postman ans a request script also provided in the repository:x
+this API was extensively tested with postman and a request.py script also provided in the repository:x
