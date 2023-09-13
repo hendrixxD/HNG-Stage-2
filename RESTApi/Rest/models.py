@@ -10,3 +10,10 @@ class Person(models.Model):
     
     def __str__(self):
         return self.name
+    
+    def __str__(self):
+        return self.age
+    
+    def __str__(self):
+        return self.email
+    
