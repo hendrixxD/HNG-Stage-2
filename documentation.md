@@ -187,7 +187,7 @@ Here are some sample API usage scenarios:
 
 
 
-## Know Limitations
+## Limitations
 - The API does not support batch operations.
 - Authentication and authorization mechanisms are not implemented in this sample.
 - Input validation checks for string fields only; other data types are not allowed.
@@ -195,3 +195,6 @@ Here are some sample API usage scenarios:
 
 ## Roll Up
 this API was extensively tested with postman and a request.py script also provided in the repository:x
+
+## UML Diagram
+you can view it [here](UML_Diagram.png)

@@ -15,4 +15,4 @@
 4. [Sample Usage](#sample-usage)
 5. [Known Limitations](#known-limitations)
 
-view full Documentation in [documentation.md](documentation.md)
+**View full Documentation in [documentation.md](documentation.md)**
