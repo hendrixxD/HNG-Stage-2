@@ -12,9 +12,9 @@ def print_response(response):
 
 # CREATE: Add a new person
 create_data = {
-    "name": "John Doe",
-    "age": 30,
-    "email": "john.doe@example.com"
+    "name": "Ladi Seth",
+    "age": 20,
+    "email": "ladiseth@gmail.com"
 }
 create_response = requests.post(base_url, json=create_data)
 print("CREATE:")
@@ -27,9 +27,9 @@ print_response(read_response)
 
 # UPDATE: Modify details of an existing person by user_id (replace 1 with the actual user_id)
 update_data = {
-    "name": "Updated Name",
-    "age": 35,
-    "email": "updated.email@example.com"
+    "name": "ladi kabig seth",
+    "age": 20,
+    "email": "ladikabigseth@gmail.com"
 }
 update_response = requests.put(base_url + "1/", json=update_data)
 print("UPDATE:")
