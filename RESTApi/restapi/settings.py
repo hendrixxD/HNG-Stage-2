@@ -77,21 +77,23 @@ WSGI_APPLICATION = 'restapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Person',
-        'USER': 'HNG',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'ATOMIC_REQUESTS': False,
-        'AUTOCOMMIT': True,
-        'CONN_MAX_AGE': 0,
-        'CONN_HEALTH_CHECKS': True,
-        'OPTIONS': {},
-        'TEST': {},
-        'TIME_ZONE': None,
-        'CHARSET': 'utf8',
-        'COLLATION': 'None',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'NAME': 'Person',
+        # 'USER': 'HNG',
+        # 'PASSWORD': 'password',
+        # 'HOST': 'localhost',
+        # 'PORT': '3306',
+        # 'ATOMIC_REQUESTS': False,
+        # 'AUTOCOMMIT': True,
+        # 'CONN_MAX_AGE': 0,
+        # 'CONN_HEALTH_CHECKS': True,
+        # 'OPTIONS': {},
+        # 'TEST': {},
+        # 'TIME_ZONE': None,
+        # 'CHARSET': 'utf8',
+        # 'COLLATION': 'None',
     }
 }
 
