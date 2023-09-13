@@ -57,6 +57,7 @@ The API will be accessible at **'http://localhost/api/'**
     "email": "HendriX@example.com"
    }
 - **Response Format:**
+
    ```json
    {
     "message": "Person created successfully.",
@@ -67,9 +68,10 @@ The API will be accessible at **'http://localhost/api/'**
 - **Endpoint: `/api/<id>/` or `/api/<name>/`**
 - **HTTPMethod: GET**
 - **Response Format:**
+
    ```json
    {
-    "user_id": 1,
+    "id": 1,
     "name": "HendriX",
     "age": 30,
     "email": "HendriX@example.com"
@@ -79,13 +81,16 @@ The API will be accessible at **'http://localhost/api/'**
 - **Endpoint: `/api/<id>/`**
 - **HTTPMethod: PUT**
 - **Request Format:**
+
    ```json
    {
     "name": "HendriX Jnr",
     "age": 35,
     "email": "HendriX@example.com"
    }
+
 - **Response Format:**
+
    ```json
    {
     "message": "updated successfully.",
@@ -96,6 +101,7 @@ The API will be accessible at **'http://localhost/api/'**
 - **Endpoint: `/api/<id>/`**
 - **HTTPMethod: DELETE**
 - **Response Format:**
+
    ```json
    {
     "message": "deleted successfully.",
@@ -114,37 +120,48 @@ Here are some sample API usage scenarios:
 ##### *Note: make sure you have your server running*
 
 ### Create a Person
+
    ```bash
    curl -X POST -H "Content-Type: application/json" -d '{
      "name": "Hendrixx Sdiddy",
      "age": 25,
      "email": "alice@example.com"
    }' http://localhost:8000/api/ -w "\n"
+   ```
 
 - **Response:**
+
   ![A terminal response of CREATE](IMGs/CREATE_PERSON.png)
 
 ### Fetch Details of a Person
+
    ```bash
    curl http://localhost:8000/api/30/ -w "\n"
+   ```
 
 - **Response:**
+
   ![A terminal response of GET](IMGs/FETCH_PERSON.png)
 
 ### Update a Person
+
    ```bash
    curl -X PUT -H "Content-Type: application/json" -d '{
      "name": "HendriX Lenge",
      "age": 20,
      "email": "devreganmatics@example.com"
    }' http://localhost:8000/api/30/ -w "\n\n"
+   ```
 
 - **Response:**
+
   ![A terminal response of PUT](IMGs/UPDATE_PERSON.png)
 
 ### Delete a Person
+
    ```bash
    curl -X DELETE http://localhost:8000/api/30/ -w "\n\n"
+   ```
 
 - **Response:**
   ![A terminal response of PUT](IMGs/DELETE_PERSON.png)
