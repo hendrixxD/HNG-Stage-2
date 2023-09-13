@@ -1,4 +1,4 @@
-# Django REST API Documentation
+# Django REST API  Documentation
 
 ## Overview
 
@@ -183,7 +183,7 @@ Here are some sample API usage scenarios:
 
   after passing `Mark Essien` to the API URL, it does just as specified. it retrieves the record from the database.
 
-![A terminal response of PUT](IMGs/get_with_name.png)
+  ![A terminal response of PUT](IMGs/get_with_name.png)
 
 
 
