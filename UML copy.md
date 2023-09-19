@@ -1,18 +1,17 @@
-# Class UML Diagram For Event App Base On [./User_Event_App_Workflow.txt](User_Event_App_Workflow.txt)
+# Class UML Diagram For Event App Base On [User_Event_App_Workflow.txt](User_Event_App_Workflow.txt)
  
   ![Class UML Diagram](IMG/UML_DIA.png)
 
   ## Notes
   
    ### Relationships:
-
-    - Users can create events (association between User and Event).
-    - Users can belong to multiple groups (many-to-many association between User and Group).
-    - Groups can contain multiple events (one-to-many association between Group and Event). 
-    - Users can RSVP to events (many-to-many association between User and Event via RSVP_Status). 
-    - Users receive notifications (one-to-many association between User and Notification).
-    - Users can have different roles within groups (many-to-many association between User and Group via User_Role).
-     - eg
+   - Users can create events (association between User and Event).
+   - Users can belong to multiple groups (many-to-many association between User and Group).
+   - Groups can contain multiple events (one-to-many association between Group and Event). 
+   - Users can RSVP to events (many-to-many association between User and Event via RSVP_Status). 
+   - Users receive notifications (one-to-many association between User and Notification).
+   - Users can have different roles within groups (many-to-many association between User and Group via User_Role).
+    - eg
       1. The User_Role class represents the roles that users can have within groups in your event app.
          It's a pivotal part of your application's access control and permissions system.
          
@@ -31,7 +30,7 @@
 
         The `User_Role` class helps manage and enforce access control and permissions within your event app. By associating users with specific roles in specific groups, you can regulate what actions each user is allowed to perform within those groups. For instance, users with the "Admin" role might have elevated privileges, while "Members" might have more limited access.
 
-    - Group owners have administrative rights over their groups (owner_id in Group).
+   - Group owners have administrative rights over their groups (owner_id in Group).
      - eg.
-      1. The owner_id in the Group class represents the user who is the owner or administrator of the group.
-         This attribute signifies which user has administrative rights and control over the specific group. 
+       1. The owner_id in the Group class represents the user who is the owner or administrator of the group.
+          This attribute signifies which user has administrative rights and control over the specific group. 
