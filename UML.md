@@ -15,7 +15,7 @@
       1. The User_Role class represents the roles that users can have within groups in your event app.
          It's a pivotal part of your application's access control and permissions system.
          
-        ![Sub Set Of UML Class; User_role](IMG/User_Role.png)
+        ![Sub Set Of UML Class; User_role](IMGs/User_Role.png)
 
         - `role_id: int:` This attribute is an identifier for each unique role record in the User_Role table.
           It typically serves as the primary key.
