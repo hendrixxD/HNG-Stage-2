@@ -15,4 +15,6 @@
 4. [Sample Usage](#sample-usage)
 5. [Known Limitations](#known-limitations)
 
+you can test this api LIVE [Here](https://hngapix.onrender.com/api/)
+
 **View full Documentation in [documentation.md](documentation.md)**
