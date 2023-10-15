@@ -19,7 +19,7 @@ class PersonListCreateView(generics.ListCreateAPIView):
         # (Created) when a new person object is created successfully.
         instance = super().create(validated_data)
         return Response({"message": "created successfully.", 
-                         "status_code": 201})
+                         "status_code": 200})
 
 
 class PersonDetailView(generics.RetrieveUpdateDestroyAPIView):
